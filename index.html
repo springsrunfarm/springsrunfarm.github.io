@@ -162,6 +162,59 @@
       animation: fadeUp 1.2s ease 0.6s both;
     }
 
+    /* ── BOOKING CTA ── */
+    .booking-section {
+      animation: fadeUp 1.2s ease 0.65s both;
+      margin-bottom: 3rem;
+      padding: 2rem 1.75rem;
+      border: 1px solid rgba(201,168,76,0.35);
+      background: rgba(201,168,76,0.06);
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .booking-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0.9;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .booking-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.3rem, 3vw, 1.7rem);
+      color: var(--cream);
+      margin-bottom: 0.6rem;
+    }
+
+    .booking-details {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--cream);
+      opacity: 0.82;
+      margin-bottom: 1.5rem;
+    }
+
+    .booking-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 0.85rem 2rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .booking-btn:hover { background: #d4b05a; }
+
     /* ── EMAIL FORM ── */
     .email-section {
       animation: fadeUp 1.2s ease 0.7s both;
@@ -341,18 +394,27 @@
     <p class="about">
       A working farm, a Pennsylvania bank barn built in 1895, a spring-fed pond,
       and horses on 27 acres at the end of College Avenue.
-      We're getting ready to welcome guests — follow along as we bring the farm to life.
     </p>
 
+    <div class="booking-section">
+      <span class="booking-label">Now Booking</span>
+      <p class="booking-title">Pick Your Own Bouquet</p>
+      <p class="booking-details">
+        Cut your own farm-fresh bouquet straight from our working cutting garden — 10–12 stems, clippers and wrap included.<br>
+        Wednesday evenings &amp; Saturday mornings · $30/person
+      </p>
+      <a href="https://bit.ly/srf-flowers" class="booking-btn" target="_blank">Book Your Spot</a>
+    </div>
+
     <div class="email-section">
-      <span class="email-label">Be the first to know when we open</span>
+      <span class="email-label">Stay in the loop</span>
       <form class="email-form" onsubmit="handleSubmit(event)">
         <input type="email" placeholder="your@email.com" required id="emailInput">
         <button type="submit">Notify Me</button>
       </form>
-      <p class="form-note">No spam. Just farm news.</p>
+      <p class="form-note">No spam. New experiences, seasonal updates, and farm happenings.</p>
       <div class="success-msg" id="successMsg">
-        You're on the list — we'll be in touch when the farm is ready.
+        You're on the list — we'll keep you posted.
       </div>
     </div>
 
